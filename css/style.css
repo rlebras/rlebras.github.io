@@ -337,6 +337,10 @@ ul#navigation li .fa {
 	padding: 60px 0 45px 0;
 }
 
+.headercontent {
+    background: #999999
+}
+
 .headercontent .title {
 	font-size: 50px;
 	margin-bottom: 25px;
