@@ -337,10 +337,6 @@ ul#navigation li .fa {
 	padding: 60px 0 45px 0;
 }
 
-.headercontent {
-    background: #999999
-}
-
 .headercontent .title {
 	font-size: 50px;
 	margin-bottom: 25px;
@@ -930,7 +926,7 @@ ul.timeline li .data .text {
 	background-size: cover;
 	background-position: center center;
 	padding: 50px 5%;
-	background: #888888;
+	background: #777777;
 }
 .home .pageheader .title{
 	border: none;
