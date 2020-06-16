@@ -923,6 +923,7 @@ ul.timeline li .data .text {
 /* home
  **************************************************/
  .home .pageheader{
+	background: #fafafa;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
