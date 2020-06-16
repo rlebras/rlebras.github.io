@@ -922,11 +922,8 @@ ul.timeline li .data .text {
 /* home
  **************************************************/
  .home .pageheader{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	padding: 50px 5%;
-	background: #444444;
+	background: #222222;
 }
 .home .pageheader .title{
 	border: none;
