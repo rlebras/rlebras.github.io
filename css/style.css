@@ -927,13 +927,17 @@ ul.timeline li .data .text {
 	background-size: cover;
 	background-position: center center;
 	padding: 50px 5%;
-	background: #2b2b2b;
+	background: #686868;
 }
 .home .pageheader .title{
 	border: none;
 }
 .home .fixedbg.parallax{
 	background: #fff url('../img/home-parallaxbg.jpg');
+}
+
+.h3 {
+	padding: 0;
 }
 
 /* publications
