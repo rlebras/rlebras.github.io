@@ -333,7 +333,7 @@ ul#navigation li .fa {
 }
 
 .pageheader {
-	background: #989898;
+	background: #888888;
 	position: relative;
 	padding: 60px 0 45px 0;
 }
@@ -927,7 +927,7 @@ ul.timeline li .data .text {
 	background-size: cover;
 	background-position: center center;
 	padding: 50px 5%;
-	background: #989898;
+	background: #888888;
 }
 .home .pageheader .title{
 	border: none;
