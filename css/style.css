@@ -938,11 +938,10 @@ ul.timeline li .data .text {
 /* publications
  **************************************************/
  #publications .pageheader{
-	background-image: url(../img/publications.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	padding: 190px 0 35px 0;
+	padding: 100px 0 35px 0;
 }
 
 #publications .pageheader .title{
