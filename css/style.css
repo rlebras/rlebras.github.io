@@ -333,7 +333,7 @@ ul#navigation li .fa {
 }
 
 .pageheader {
-	background: #f3f3f3;
+	background: #989898;
 	position: relative;
 	padding: 60px 0 45px 0;
 }
@@ -934,6 +934,11 @@ ul.timeline li .data .text {
 }
 .home .fixedbg.parallax{
 	background: #fff url('../img/home-parallaxbg.jpg');
+}
+
+
+.home .h3 {
+	padding: 0;
 }
 
 .h3 {
