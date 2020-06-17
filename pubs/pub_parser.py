@@ -13,15 +13,20 @@ conf_fullname_map = {
     'AAAI': 'Conference on Artificial Intelligence',
     'CompSust': 'International Conference on Computational Sustainability',
     'CP': 'International Conference on Principles and Practice of Constraint Programming',
-    'CPAIOR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
+    'CP-AI-OR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
+    'IAAI': 'Conference on Innovative Applications of Artificial Intelligence',
     'IJCAI': 'International Joint Conference on Artificial Intelligence',
     'EMNLP': 'Empirical Methods in Natural Language Processing',
     'HCOMP': 'AAAI Conference on Human Computation and Crowdsourcing',
     'ICLR': 'International Conference on Learning Representations',
     'ICML': 'International Conference on Machine Learning',
     'SAT': 'International Conference on Theory and Applications of Satisfiability Testing',
+    'SemEval-NAACL': 'North American Chapter of the Association for Computational Linguistics',
+    'The VLDB Journal': 'The International Journall on Very Large Data Bases',
     'VLDB': 'International Conference on Very Large Data Bases',
 }
+
+journals=['The VLDB Journal']
 
 def getConfName(conf, year):
     ret = conf + " " + year
@@ -30,7 +35,8 @@ def getConfName(conf, year):
     return ret
 
 def writeHTML(paper, link, authors, year, conf, abstract):
-    s='''<div class="item mix cpaper" data-year="YEARPH">
+    type='cpaper'
+    s='''<div class="item mix TYPEPH" data-year="YEARPH">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
 
@@ -55,6 +61,9 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                         <p>ABSTRACTPH</p>
                                                     </div>
         </div>'''
+    if conf in journals:
+        type="jpaper"
+    s = s.replace('TYPEPH', type)
     s = s.replace('PAPERPH', paper)
     s = s.replace('LINKPH', link)
     s = s.replace('AUTHORSPH', authors)
