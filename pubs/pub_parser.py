@@ -16,6 +16,7 @@ conf_fullname_map = {
     'CP-AI-OR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
     'IAAI': 'Conference on Innovative Applications of Artificial Intelligence',
     'IJCAI': 'International Joint Conference on Artificial Intelligence',
+    'J Econ Behav Organ.': 'The Journal of Economic Behavior and Organization',
     'EMNLP': 'Empirical Methods in Natural Language Processing',
     'HCOMP': 'AAAI Conference on Human Computation and Crowdsourcing',
     'ICLR': 'International Conference on Learning Representations',
@@ -26,7 +27,7 @@ conf_fullname_map = {
     'VLDB': 'International Conference on Very Large Data Bases',
 }
 
-journals=['The VLDB Journal', 'Journal of Economic Behavior and Organization']
+journals=['The VLDB Journal', 'J Econ Behav Organ.']
 
 def getConfName(conf, year):
     ret = conf + " " + year
