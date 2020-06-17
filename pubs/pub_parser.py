@@ -26,7 +26,7 @@ conf_fullname_map = {
     'VLDB': 'International Conference on Very Large Data Bases',
 }
 
-journals=['The VLDB Journal']
+journals=['The VLDB Journal', 'Journal of Economic Behavior and Organization']
 
 def getConfName(conf, year):
     ret = conf + " " + year
