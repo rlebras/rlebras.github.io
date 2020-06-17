@@ -9,6 +9,26 @@ def getNodeText(node):
             result.append(node.data)
     return ''.join(result)
 
+conf_fullname_map = {
+    'AAAI': 'Conference on Artificial Intelligence',
+    'CompSust': 'International Conference on Computational Sustainability',
+    'CP': 'International Conference on Principles and Practice of Constraint Programming',
+    'CPAIOR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
+    'IJCAI': 'International Joint Conference on Artificial Intelligence',
+    'EMNLP': 'Empirical Methods in Natural Language Processing',
+    'HCOMP': 'AAAI Conference on Human Computation and Crowdsourcing',
+    'ICLR': 'International Conference on Learning Representations',
+    'ICML': 'International Conference on Machine Learning',
+    'SAT': 'International Conference on Theory and Applications of Satisfiability Testing',
+    'VLDB': 'International Conference on Very Large Data Bases',
+}
+
+def getConfName(conf, year):
+    ret = conf + " " + year
+    if conf in conf_fullname_map:
+        ret = conf_fullname_map[conf] + ", " + ret
+    return ret
+
 def writeHTML(paper, link, authors, year, conf, abstract):
     s='''<div class="item mix cpaper" data-year="YEARPH">
                                                     <div class="pubmain">
@@ -27,7 +47,7 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                         <div class="pubauthor">AUTHORSPH</div>
                                                         <div class="pubauthor">
                                                         </div>
-                                                        <div class="pubcite"><span class="label label-success">Conference Papers</span> ArXiv Pre-Print</div>
+                                                        <div class="pubcite"><span class="label label-success">CONFPH</span> CONFFULLPH </div>
 
                                                     </div>
                                                     <div class="pubdetails">
@@ -40,6 +60,7 @@ def writeHTML(paper, link, authors, year, conf, abstract):
     s = s.replace('AUTHORSPH', authors)
     s = s.replace('YEARPH', year)
     s = s.replace('CONFPH', conf)
+    s = s.replace('CONFFULLPH', getConfName(conf, year))
     s = s.replace('ABSTRACTPH', abstract)
     return s
 
@@ -55,9 +76,9 @@ def parse():
     for s in itemlist:
         title=s.getElementsByTagName('Result.Title')[0].getElementsByTagName('a')[0]
         authors=clean(getNodeText(s.getElementsByTagName('BodySmall')[0].getElementsByTagName('strong')[0]))
-        year_conf=clean(getNodeText(s.getElementsByTagName('BodySmall')[1]))
-        year=clean(year_conf.split("|")[0])
-        conf=clean(year_conf.split("|")[1])
+        conf_year=clean(getNodeText(s.getElementsByTagName('BodySmall')[1]))
+        conf=clean(conf_year.split("|")[0])
+        year=clean(conf_year.split("|")[1])
         abstract=getNodeText(s.getElementsByTagName('p')[0])
         link=title.getAttribute("href").strip()
         paper=clean(getNodeText(title))
