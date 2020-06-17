@@ -34,8 +34,9 @@ def getConfName(conf, year):
         ret = conf_fullname_map[conf] + ", " + ret
     return ret
 
+
 def writeHTML(paper, link, authors, year, conf, abstract):
-    type='cpaper'
+    type='cpaper ' + conf
     s='''<div class="item mix TYPEPH" data-year="YEARPH">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
@@ -62,7 +63,7 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                     </div>
         </div>'''
     if conf in journals:
-        type="jpaper"
+        type="jpaper " + conf
     s = s.replace('TYPEPH', type)
     s = s.replace('PAPERPH', paper)
     s = s.replace('LINKPH', link)
