@@ -85,6 +85,7 @@ def parse():
     xmldoc = minidom.parse(file)
     itemlist = xmldoc.getElementsByTagName('Result.Item')
 
+    f = open("../publication_items.html", "w")
     for s in itemlist:
         title=s.getElementsByTagName('Result.Title')[0].getElementsByTagName('a')[0]
         authors=clean(getNodeText(s.getElementsByTagName('BodySmall')[0].getElementsByTagName('strong')[0]))
@@ -97,9 +98,9 @@ def parse():
 
         s = writeHTML(paper, link, authors, year, conf, abstract)
         print(s)
-        f = open("../publication_items.html", "w")
         f.write(s)
-        f.close()
+
+    f.close()
 
 def main():
     parse()
