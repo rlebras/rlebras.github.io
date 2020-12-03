@@ -1,4 +1,190 @@
     <ul>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://api.semanticscholar.org/e39503e01ebb108c6773948a24ca798cd444eb62">
+                    COMET-ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Jena D. Hwang, Chandra Bhagavatula, Ronan Le Bras, Jeff Da, Keisuke Sakaguchi, Antoine Bosselut, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>AAAI | 2021</BodySmall>
+            <p>
+                Recent years have brought about a renewed interest in commonsense representation and reasoning in the field of natural language understanding. The development of new commonsense knowledge graphs (CSKG) has been central to these advances as their diverse facts can be used and referenced by machine learning models for tackling new and challenging tasks. At the same time, there remain questions about the quality and coverage of these resources due to the massive scale required to comprehensively encompass general commonsense knowledge.
+In this work, we posit that manually constructed CSKGs will never achieve the coverage necessary to be applicable in all situations encountered by NLP agents. Therefore, we propose a new evaluation framework for testing the utility of KGs based on how effectively implicit knowledge representations can be learned from them.
+With this new goal, we propose ATOMIC 2020, a new CSKG of general-purpose commonsense knowledge containing knowledge that is not readily available in pretrained language models. We evaluate its properties in comparison with other leading CSKGs, performing the first large-scale pairwise study of commonsense knowledge resources. Next, we show that ATOMIC 2020 is better suited for training knowledge models that can generate accurate, representative knowledge for new, unseen entities and events. Finally, through human evaluation, we show that the few-shot performance of GPT-3 (175B parameters), while impressive, remains ~12 absolute points lower than a BART-based knowledge model trained on ATOMIC 2020 despite using over 430x fewer parameters.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="">
+                    UNICORN on RAINBOW: A Universal Commonsense Reasoning Model on a New Multitask Benchmark
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Nicholas Lourie, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>AAAI | 2021</BodySmall>
+            <p>
+                As AI systems become an increasing part of people's everyday lives, it becomes ever more important that they understand people's ethical norms. Motivated by descriptive ethics, a field of study that focuses on people's descriptive judgments rather than theoretical prescriptions on morality, we investigate a novel, data-driven approach to machine ethics.
+We introduce SCRUPLES, the first large-scale dataset with 625,000 ethical judgments over 32,000 real-life anecdotes. Each anecdote recounts a complex ethical situation, often posing moral dilemmas, paired with a distribution of judgments contributed by the community members. Our dataset presents a major challenge to state-of-the-art neural language models, leaving significant room for improvement. However, when presented with simplified moral situations, the results are considerably more promising, suggesting that neural models can effectively learn simpler ethical building blocks.
+A key take-away of our empirical analysis is that norms are not always clean-cut; many situations are naturally divisive. We present a new method to estimate the best possible performance on such tasks with inherently diverse label distributions, and explore likelihood functions that separate intrinsic from model uncertainty.
+                   </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://api.semanticscholar.org/ba3c0aa5c9057140e08872e908efe48791af3083">
+                    Scruples: A Corpus of Community Ethical Judgments on 32, 000 Real-Life Anecdotes
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Nicholas Lourie, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>AAAI | 2021</BodySmall>
+            <p>
+                As AI systems become an increasing part of people's everyday lives, it becomes ever more important that they understand people's ethical norms. Motivated by descriptive ethics, a field of study that focuses on people's descriptive judgments rather than theoretical prescriptions on morality, we investigate a novel, data-driven approach to machine ethics.
+We introduce Scruples, the first large-scale dataset with 625,000 ethical judgments over 32,000 real-life anecdotes. Each anecdote recounts a complex ethical situation, often posing moral dilemmas, paired with a distribution of judgments contributed by the community members. Our dataset presents a major challenge to state-of-the-art neural language models, leaving significant room for improvement. However, when presented with simplified moral situations, the results are considerably more promising, suggesting that neural models can effectively learn simpler ethical building blocks.
+A key take-away of our empirical analysis is that norms are not always clean-cut; many situations are naturally divisive. We present a new method to estimate the best possible performance on such tasks with inherently diverse label distributions, and explore likelihood functions that separate intrinsic from model uncertainty.
+            </p>
+        </Result.Item>
+
+
+
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://api.semanticscholar.org/e2ecce8134a736444065e28a5c12344245b13f7d">
+                    Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Antoine Bosselut, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>AAAI | 2021</BodySmall>
+            <p>
+                Understanding narratives requires reasoning about implicit world knowledge related to the causes, effects, and states of situations described in text. At the core of this challenge is how to access contextually relevant knowledge on demand and reason over it. In this paper, we present initial studies toward zero-shot commonsense question answering by formulating the task as inference over dynamically generated commonsense knowledge graphs. In contrast to previous studies for knowledge integration that rely on retrieval of existing knowledge from static knowledge graphs, our study requires commonsense knowledge integration where contextually relevant knowledge is often not present in existing knowledge bases. Therefore, we present a novel approach that generates contextually-relevant symbolic knowledge structures on demand using generative neural commonsense knowledge models. Empirical results on two datasets demonstrate the efficacy of our neuro-symbolic approach for dynamically constructing knowledge graphs for reasoning. Our approach achieves significant performance boosts over pretrained language models and vanilla knowledge models, all while providing interpretable reasoning paths for its predictions.
+            </p>
+        </Result.Item>
+
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://api.semanticscholar.org/5dfc43bb697acf5eacf8b8a05d78dba8beb0dd42">
+                    Paragraph-Level Commonsense Transformers with Recurrent Memory
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Saadia Gabriel, Chandra Bhagavatula, Vered Shwartz, Ronan Le Bras, Max Forbes, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>AAAI | 2021</BodySmall>
+            <p>
+                Human understanding of narrative texts requires making commonsense inferences beyond what is stated in the text explicitly. A recent model, COMeT, can generate such inferences along several dimensions such as pre- and post-conditions, motivations, and mental-states of the participants. However, COMeT was trained on short phrases, and is therefore discourse-agnostic. When presented with each sentence of a multi-sentence narrative, it might generate inferences that are inconsistent with the rest of the narrative.
+We present the task of discourse-aware commonsense inference. Given a sentence within a narrative, the goal is to generate commonsense inferences along predefined dimensions, while maintaining coherence with the rest of the narrative. Such large-scale paragraph-level annotation is hard to get and costly, so we use available sentence-level annotations to efficiently and automatically construct a distantly supervised corpus.
+Using this corpus, we train PARA-COMeT, a discourse-aware model that incorporates paragraph-level information to generate coherent commonsense inferences from narratives. PARA-COMeT captures both semantic knowledge pertaining to prior world knowledge, and episodic knowledge involving how current events relate to prior and future events in a narrative. Our results confirm that PARA-COMeT outperforms the sentence-level baselines, particularly in generating inferences that are both coherent and novel.
+            </p>
+        </Result.Item>
+
+
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Unsupervised-Commonsense-Question-Answering-with-Shwartz-West/a45b430f057a48b2d4c31c9278248c2b43780bf8">
+                    Unsupervised Commonsense Question Answering with Self-Talk
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Vered Shwartz, Peter West, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>EMNLP | 2020</BodySmall>
+            <p>
+                Natural language understanding involves reading between the lines with implicit background knowledge. Current systems either rely on pre-trained language models as the sole implicit source of world knowledge, or resort to external knowledge bases (KBs) to incorporate additional relevant knowledge. We propose an unsupervised framework based on \emph{self-talk} as a novel alternative to multiple-choice commonsense tasks. Inspired by inquiry-based discovery learning (Bruner, 1961), our approach inquires language models with a number of information seeking questions such as "$\textit{what is the definition of ...}$" to discover additional background knowledge. Empirical results demonstrate that the self-talk procedure substantially improves the performance of zero-shot language model baselines on four out of six commonsense benchmarks, and competes with models that obtain knowledge from external KBs. While our approach improves performance on several benchmarks, the self-talk induced knowledge even when leading to correct answers is not always seen as useful by human judges, raising interesting questions about the inner-workings of pre-trained language models for commonsense reasoning.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Back-to-the-Future%3A-Unsupervised-Backprop-based-for-Qin-Shwartz/14c454c27dffd655cea839a0684a2d855117cd58">
+                    Back to the Future: Unsupervised Backprop-based Decoding for Counterfactual and Abductive Commonsense Reasoning
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Lianhui Qin, Vered Shwartz, P. West, Chandra Bhagavatula, Jena D. Hwang, Ronan Le Bras, Antoine Bosselut, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>EMNLP | 2020</BodySmall>
+            <p>
+               Abductive and counterfactual reasoning, core abilities of everyday human cognition, require reasoning about what might have happened at time t, while conditioning on multiple contexts from the relative past and future. However, simultaneous incorporation of past and future contexts using generative language models (LMs) can be challenging, as they are trained either to condition only on the past context or to perform narrowly scoped text-infilling. In this paper, we propose DELOREAN, a new unsupervised decoding algorithm that can flexibly incorporate both the past and future contexts using only off-the-shelf, left-to-right language models and no supervision. The key intuition of our algorithm is incorporating the future through back-propagation, during which, we only update the internal representation of the output while fixing the model parameters. By alternating between forward and backward propagation, DELOREAN can decode the output representation that reflects both the left and right contexts. We demonstrate that our approach is general and applicable to two nonmonotonic reasoning tasks: abductive text generation and counterfactual story revision, where DELOREAN outperforms a range of unsupervised and some supervised methods, based on automatic and human evaluation.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Thinking-Like-a-Skeptic%3A-Defeasible-Inference-in-Rudinger-Shwartz/47e799f83b0850f3d036a2e3a66bb337661b7e68">
+                    Thinking Like a Skeptic: Defeasible Inference in Natural Language
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Rachel Rudinger, Vered Shwartz, Jena D. Hwang, Chandra Bhagavatula, Maxwell Forbes, Ronan Le Bras, Noah A. Smith, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>Findings of EMNLP | 2020</BodySmall>
+            <p>
+                Defeasible inference is a mode of reasoning in which an inference (X is a bird, therefore X flies) may be weakened or overturned in light of new evidence (X is a penguin). Though long recognized in classical AI and philosophy, defeasible inference has not been extensively studied in the context of contemporary data-driven research on natural language inference and commonsense reasoning. We introduce Defeasible NLI (abbreviated δ-NLI), a dataset for defeasible inference in natural language. δ-NLI contains extensions to three existing inference datasets covering diverse modes of reasoning: common sense, natural language inference, and social norms. From δ-NLI, we develop both a classification and generation task for defeasible inference, and demonstrate that the generation task is much more challenging. Despite lagging human performance, however, generative models trained on this data are capable of writing sentences that weaken or strengthen a specified inference up to 68% of the time.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Natural-Language-Rationales-with-Full-Stack-Visual-Marasovi%C4%87-Bhagavatula/c9940a17504a3b83bd1e9d613b095ddb204d2ad0">
+                    Natural Language Rationales with Full-Stack Visual Reasoning: From Pixels to Semantic Frames to Commonsense Graphs
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Ana Marasović, Chandra Bhagavatula, J. Park, Ronan Le Bras, Noah A. Smith, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>Findings of EMNLP | 2020</BodySmall>
+            <p>
+                Natural language rationales could provide intuitive, higher-level explanations that are easily understandable by humans, complementing the more broadly studied lower-level explanations based on gradients or attention weights. We present the first study focused on generating natural language rationales across several complex visual reasoning tasks: visual commonsense reasoning, visual-textual entailment, and visual question answering. The key challenge of accurate rationalization is comprehensive image understanding at all levels: not just their explicit content at the pixel level, but their contextual contents at the semantic and pragmatic levels. We present RATIONALEVT TRANSFORMER, an integrated model that learns to generate free-text rationales by combining pretrained language models with object recognition, grounded visual semantic frames, and visual commonsense graphs. Our experiments show that the base pretrained language model benefits from visual adaptation and that freetext rationalization is a promising research direction to complement model interpretability for complex visual-textual reasoning tasks.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Generative-Data-Augmentation-for-Commonsense-Yang-Malaviya/dd6f3b6d92ae9448a2000d9690b921f545f00256">
+                   Generative Data Augmentation for Commonsense Reasoning
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Yiben Yang, Chaitanya Malaviya, Jared Fernandez, Swabha Swayamdipta, Ronan Le Bras, J. Wang, Chandra Bhagavatula, Yejin Choi, Doug Downey
+                </strong>
+            </BodySmall>
+            <BodySmall>Findings of EMNLP | 2020</BodySmall>
+            <p>
+                Recent advances in commonsense reasoning depend on large-scale human-annotated training data to achieve peak performance. However, manual curation of training examples is expensive and has been shown to introduce annotation artifacts that neural models can readily exploit and overfit on. We investigate G-DAUG, a novel generative data augmentation method that aims to achieve more accurate and robust learning in the low-resource setting. Our approach generates synthetic examples using pretrained language models, and selects the most informative and diverse set of examples for data augmentation. In experiments with multiple commonsense reasoning benchmarks, G-DAUG consistently outperforms existing data augmentation methods based on back-translation, and establishes a new state-of-the-art on WinoGrande, CODAH, and CommonsenseQA. Further, in addition to improvements in in-distribution accuracy, G-DAUG-augmented training also enhances out-of-distribution generalization, showing greater robustness against adversarial or perturbed examples. Our analysis demonstrates that G-DAUG produces a diverse set of fluent training examples, and that its selection and training approaches are important for performance. Our findings encourage future research toward generative data augmentation to enhance both in-distribution learning and out-of-distribution generalization.
+            </p>
+        </Result.Item>
+
+
         <Result.Item border="none">
             <Result.Title>
                 <a href="https://www.semanticscholar.org/paper/Adversarial-Filters-of-Dataset-Biases-Bras-Swayamdipta/22d834f7983fbd7cf2418978571f23efcd224bd9">
