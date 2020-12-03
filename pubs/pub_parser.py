@@ -48,7 +48,7 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                             </a>
                                                             <a href="LINKPH" title="Download" target="_blank">
 
-                                                                <i class="fa fa-cloud-download"></i>
+                                                                <i class="fa fa-external-link"></i>
                                                             </a>
                                                         </div>
 
@@ -97,6 +97,9 @@ def parse():
 
         s = writeHTML(paper, link, authors, year, conf, abstract)
         print(s)
+        f = open("../publication_items.html", "w")
+        f.write(s)
+        f.close()
 
 def main():
     parse()
