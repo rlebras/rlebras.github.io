@@ -18,6 +18,7 @@ conf_fullname_map = {
     'IJCAI': 'International Joint Conference on Artificial Intelligence',
     'J Econ Behav Organ.': 'The Journal of Economic Behavior and Organization',
     'EMNLP': 'Empirical Methods in Natural Language Processing',
+    'Findings of EMNLP': 'Empirical Methods in Natural Language Processing',
     'HCOMP': 'AAAI Conference on Human Computation and Crowdsourcing',
     'ICLR': 'International Conference on Learning Representations',
     'ICML': 'International Conference on Machine Learning',
