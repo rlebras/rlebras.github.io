@@ -2,6 +2,23 @@
 
         <Result.Item border="none">
             <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/NeuroLogic-Decoding%3A-(Un)supervised-Neural-Text-Lu-West/2c5bf29079cd958a2bef150077a02a1deb300652">
+                    NeuroLogic Decoding: (Un)supervised Neural Text Generation with Predicate Logic Constraints
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Ximing Lu, Peter West, Rowan Zellers, Ronan Le Bras, Chandra Bhagavatula, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>NAACL | 2021</BodySmall>
+            <p>
+                Conditional text generation often requires lexical constraints, i.e., which words should or shouldn't be included in the output text. While the dominant recipe for conditional text generation has been large-scale pretrained language models that are finetuned on the task-specific training data, such models do not learn to follow the underlying constraints reliably, even when supervised with large amounts of task-specific examples. We propose NeuroLogic Decoding, a simple yet effective algorithm that enables neural language models -- supervised or not -- to generate fluent text while satisfying complex lexical constraints. Our approach is powerful yet efficient. It handles any set of lexical constraints that is expressible under predicate logic, while its asymptotic runtime is equivalent to conventional beam search. Empirical results on four benchmarks show that NeuroLogic Decoding outperforms previous approaches, including algorithms that handle a subset of our constraints. Moreover, we find that unsupervised models with NeuroLogic Decoding often outperform supervised models with conventional decoding, even when the latter is based on considerably larger networks. Our results suggest the limit of large-scale neural networks for fine-grained controllable generation and the promise of inference-time algorithms.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
                 <a href="https://api.semanticscholar.org/e39503e01ebb108c6773948a24ca798cd444eb62">
                     COMET-ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs
                 </a>

@@ -22,6 +22,7 @@ conf_fullname_map = {
     'HCOMP': 'AAAI Conference on Human Computation and Crowdsourcing',
     'ICLR': 'International Conference on Learning Representations',
     'ICML': 'International Conference on Machine Learning',
+    'NAACL': 'North American Chapter of the Association for Computational Linguistics',
     'SAT': 'International Conference on Theory and Applications of Satisfiability Testing',
     'SemEval-NAACL': 'North American Chapter of the Association for Computational Linguistics',
     'The VLDB Journal': 'The International Journall on Very Large Data Bases',
