@@ -178,7 +178,147 @@
 
 
 
-                                                <div class="item mix cpaper EMNLP" data-year="2021">
+
+
+
+
+
+                                                <div class="item mix cpaper NAACL" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/NeuroLogic-A*esque-Decoding%3A-Constrained-Text-with-Lu-Welleck/304cf21da84961469ac9f43405df187441832b61" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics</h4>
+                                                        <div class="pubauthor">Ximing Lu, S. Welleck, Peter West, Liwei Jiang, Jungo Kasai, Daniel Khashabi, Ronan Le Bras, Lianhui Qin, Youngjae Yu, Rowan Zellers, Noah A. Smith, Yejin Choi</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">NAACL</span> North American Chapter of the Association for Computational Linguistics, NAACL 2022 </div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                The dominant paradigm for neural text generation is left-to-right decoding from autoregressive language models. Constrained or controllable generation under complex lexical constraints, however, requires foresight to plan ahead feasible future paths. Drawing inspiration from the A* search algorithm, we propose NEUROLOGIC AFesque,1 a decoding algorithm that incorporates heuristic estimates of future cost. We develop efficient lookahead heuristics that are efficient for large-scale language models, making our method a drop-in replacement for common techniques such as beam search and top-k sampling. To enable constrained generation, we build on NEUROLOGIC decoding (Lu et al., 2021), combining its flexibility in incorporating logical constraints with AFesque estimates of future constraint satisfaction. Our approach outperforms competitive baselines on five generation tasks, and achieves new state-of-the-art performance on table-totext generation, constrained machine translation, and keyword-constrained generation. The improvements are particularly notable on tasks that require complex constraint satisfaction or in few-shot or zero-shot settings. NEUROLOGIC AFesque illustrates the power of decoding for improving and enabling new capabilities of large-scale language models.
+            </p>
+                                                    </div>
+        </div>
+<div class="item mix cpaper NAACL" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/Transparent-Human-Evaluation-for-Image-Captioning-Kasai-Sakaguchi/314a6ade391f591db23f59a932eb37f88ea38830" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Transparent Human Evaluation for Image Captioning</h4>
+                                                        <div class="pubauthor">Jungo Kasai, Keisuke Sakaguchi, Lavinia Dunagan, Jacob Morrison, Ronan Le Bras, Yejin Choi, Noah A. Smith</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">NAACL</span> North American Chapter of the Association for Computational Linguistics, NAACL 2022 </div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                We establish a rubric-based human evaluation protocol for image captioning models. Our scoring rubrics and their definitions are carefully developed based on machineand humangenerated captions on the MSCOCO dataset. Each caption is evaluated along two main dimensions in a tradeoff (precision and recall) as well as other aspects that measure the text quality (fluency, conciseness, and inclusive language). Our evaluations demonstrate several critical problems of the current evaluation practice. Human-generated captions show substantially higher quality than machine-generated ones, especially in coverage of salient information (i.e., recall), while all automatic metrics say the opposite. Our rubric-based results reveal that CLIPScore, a recent metric that uses image features, better correlates with human judgments than conventional text-only metrics because it is more sensitive to recall. We hope that this work will promote a more transparent evaluation protocol for image captioning and its automatic metrics.
+            </p>
+                                                    </div>
+        </div>
+<div class="item mix cpaper NAACL" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/Bidimensional-Leaderboards%3A-Generate-and-Evaluate-Kasai-Sakaguchi/718d30a66f032ebfa560070939349cedd4df28ad" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand</h4>
+                                                        <div class="pubauthor">Jungo Kasai, Keisuke Sakaguchi, Ronan Le Bras, Lavinia Dunagan, Jacob Morrison, Alexander R. Fabbri, Yejin Choi, Noah A. Smith</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">NAACL</span> North American Chapter of the Association for Computational Linguistics, NAACL 2022 </div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning.1 We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.
+            </p>
+                                                    </div>
+        </div>
+<div class="item mix cpaper NAACL" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/Symbolic-Knowledge-Distillation%3A-from-General-to-West-Bhagavatula/21d45b4923ad165fbb6612e08d06f9d786f9b4cc" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Symbolic Knowledge Distillation: from General Language Models to Commonsense Models</h4>
+                                                        <div class="pubauthor">Peter West, Chandrasekhar Bhagavatula, Jack Hessel, Jena D. Hwang, Liwei Jiang, Ronan Le Bras, Ximing Lu, S. Welleck, Yejin Choi</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">NAACL</span> North American Chapter of the Association for Computational Linguistics, NAACL 2022 </div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                The common practice for training commonsense models has gone from–human–to– corpus–to–machine: humans author commonsense knowledge graphs in order to train commonsense models. In this work, we investigate an alternative, from–machine–to–corpus– to–machine: general language models author these commonsense knowledge graphs to train commonsense models. Our study leads to a new framework, Symbolic Knowledge Distillation. As with prior art in Knowledge Distillation (Hinton et al., 2015), our approach uses larger models to teach smaller models. A key difference is that we distill knowledge symbolically–as text–in addition to the neural model. We also distill only one aspect–the commonsense of a general language model teacher, allowing the student to be a different type, a commonsense model. Altogether, we show that careful prompt engineering and a separately trained critic model allow us to selectively distill high-quality causal commonsense from GPT-3, a general language model. Empirical results demonstrate that, for the first time, a human-authored commonsense knowledge graph is surpassed by our automatically distilled variant in all three criteria: quantity, quality, and diversity. In addition, it results in a neural commonsense model that surpasses the teacher model’s commonsense capabilities despite its 100x smaller size. We apply this to the ATOMIC resource, and share our new symbolic knowledge graph and commonsense models1.
+            </p>
+                                                    </div>
+        </div>
+<div class="item mix cpaper ACL" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/Generated-Knowledge-Prompting-for-Commonsense-Liu-Liu/12a763cb52f650710900790ca0bc43e5d5b88be6" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Generated Knowledge Prompting for Commonsense Reasoning</h4>
+                                                        <div class="pubauthor">Jiachen Liu, Alisa Liu, Ximing Lu, Sean Welleck, Peter West, Ronan Le Bras, Yejin Choi, Hannaneh Hajishirzi</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">ACL</span> ACL 2022 </div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                Despite their ability to capture large amount of knowledge during pretraining, large-scale language models often benefit from incorporating external knowledge bases, especially on commonsense reasoning tasks. This motivates us to explore how we can best leverage knowledge elicited from language models themselves. We propose generating knowledge statements directly from a language model with a generic prompt format, then selecting the knowledge which maximizes prediction probability. Despite its simplicity, this approach improves performance of both off-theshelf and finetuned language models on four commonsense reasoning tasks, improving the state-of-the-art on numerical commonsense (NumerSense), general commonsense (CommonsenseQA 2.0), and scientific commonsense (QASC) benchmarks. Notably, we find that a model’s predictions can improve when using its own generated knowledge, demonstrating the importance of symbolic knowledge representation in neural reasoning processes.
+            </p>
+                                                    </div>
+        </div>
+<div class="item mix cpaper EMNLP" data-year="2021">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
 
