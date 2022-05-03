@@ -11,6 +11,7 @@ def getNodeText(node):
 
 conf_fullname_map = {
     'AAAI': 'Conference on Artificial Intelligence',
+    'ACL': 'Association for Computational Linguistics',
     'CompSust': 'International Conference on Computational Sustainability',
     'CP': 'International Conference on Principles and Practice of Constraint Programming',
     'CP-AI-OR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
