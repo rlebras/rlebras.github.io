@@ -1,4 +1,55 @@
     <ul>
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Neural-Theory-of-Mind-On-the-Limits-of-Social-in-Sap-Lebras/b4c16b0f26f9f5ad5e12f9bec3f1ad72eaa5491b">
+                    Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Maarten Sap, Ronan Le Bras, Daniel Fried, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>EMNLP | 2022</BodySmall>
+            <p>
+                Social intelligence and Theory of Mind (T O M), i.e., the ability to reason about the different mental states, intents, and reactions of all people involved, allow humans to effectively navigate and understand everyday social interactions. As NLP systems are used in increasingly complex social situations, their ability to grasp social dynamics becomes crucial. In this work, we examine the open question of social intelligence and Theory of Mind in modern NLP systems from an empirical and theory-based perspective. We show that one of today’s largest language models (GPT-3; Brown et al., 2020) lacks this kind of social intelligence out-of-the box, using two tasks: S OCIAL IQ A (Sap et al., 2019b), which measures models’ ability to understand intents and reactions of participants of social interactions, and T O M I (Le et al., 2019), which measures whether models can infer mental states and realities of participants of situations. Our results show that models struggle substantially at these Theory of Mind tasks, with well-below-human accuracies of 55% and 60% on S OCIAL IQ A and T O M I , respectively. To conclude, we draw on theories from pragmatics to contextualize this shortcoming of large language models, by examining the limitations stemming from their data, neural archi-tecture, and training paradigms. Challenging the prevalent narrative that only scale is needed, we posit that person-centric NLP approaches might be more effective towards neural Theory of Mind.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Twist-Decoding%3A-Diverse-Generators-Guide-Each-Other-Kasai-Sakaguchi/ded0cd920c145ca0ae68acf306d54926cad5388c">
+                    Twist Decoding: Diverse Generators Guide Each Other
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Jungo Kasai, Keisuke Sakaguchi, Ronan Le Bras, Hao Peng, Ximing Lu, Dragomir Radev, Yejin Choi, Noah A. Smith
+                </strong>
+            </BodySmall>
+            <BodySmall>EMNLP | 2022</BodySmall>
+            <p>
+                Natural language generation technology has recently seen remarkable progress with large-scale training, and many natural language applications are now built upon a wide range of generation models. Combining diverse models may lead to further progress, but conven-tional ensembling (e.g., shallow fusion) requires that they share vocabulary/tokenization schemes. We introduce T WIST decoding, a simple and general inference algorithm that generates text while beneﬁting from diverse models. Our method does not assume the vocabulary, tokenization or even generation order is shared. Our extensive evaluations on machine translation and scientiﬁc paper summarization demonstrate that T WIST decoding substantially outperforms each model decoded in isolation over various scenarios, including cases where domain-speciﬁc and general-purpose models are both available. T WIST decoding also consistently outperforms the popular reranking heuristic where output candidates from one model is rescored by another. We hope that our work will encourage researchers and practitioners to examine generation models collectively, not just indepen-dently, and to seek out models with complementary strengths to the currently available models.
+            </p>
+
+        </Result.Item>
+
+                <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Maieutic-Prompting%3A-Logically-Consistent-Reasoning-Jung-Qin/50b0c6ee2b3d53ba5af69d6c00b5d60888a9026f">
+                    Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Jaehun Jung, Lianhui Qin, S. Welleck, Faeze Brahman, Chandra Bhagavatula, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>EMNLP | 2022</BodySmall>
+            <p>
+                Pre-trained language models (LMs) struggle with consistent reasoning; recently, prompting LMs to generate explanations that self-guide the inference has emerged as a promising direction to amend this. However, these approaches are fundamentally bounded by the correctness of explanations, which themselves are often noisy and inconsistent. In this work, we develop MAIEUTIC PROMPTING, which aims to infer a correct answer to a question even from the unreliable generations of LM. MAIEUTIC PROMPTING induces a tree of explanations abductively (e.g. X is true, because ... ) and recursively , then frames the inference as a satisﬁability problem over these explanations and their logical relations. We test MAIEUTIC PROMPTING for true/false QA on three challenging benchmarks that require complex commonsense reasoning. MAIEUTIC PROMPTING achieves up to 20% better accuracy than state-of-the-art prompting methods, and as a fully unsupervised approach, performs competitively with supervised models. We also show that MAIEUTIC PROMPTING improves robustness in inference while providing interpretable rationales.
+            </p>
+        </Result.Item>
 
         <Result.Item border="none">
             <Result.Title>
