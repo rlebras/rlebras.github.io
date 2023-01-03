@@ -277,7 +277,7 @@ $(document).ready(function(){
 
 		});
 	}
-	generateLabCarousel();
+	//generateLabCarousel(); WARNING
 
 
 
