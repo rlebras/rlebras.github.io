@@ -5,6 +5,7 @@
 .wrapper {
     overflow-y: scroll;
 }
+
 body {
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
@@ -134,23 +135,24 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, em {
 #main {
 	position: absolute;
 	left: 250px;
-	right: 0;
+	right: 0px;
 	top: 0;
 	bottom: 0;
+	z-index: 0;
 	background: #fefefe;
 	overflow: hidden;
-	-webkit-overflow-scrolling: touch;
 }
 
 .page {
-	overflow: auto;
 	position: absolute;
+	left: 0;
+	right: 0px;
 	top: 0;
-	left: 0px;
 	bottom: 0;
+	z-index: 0;
 	width: 100%;
 	background-color: #f7f7f7;
-	-webkit-overflow-scrolling: touch;
+	overflow: auto;
 }
 
 .home {
@@ -172,7 +174,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, em {
 	display: none;
 	z-index: 300;
 	cursor: crosshair;
-	cursor: url(../img/pointer.png), auto;
+	cursor: url("../img/pointer.png"), auto;
 }
 
 #runner {
@@ -959,7 +961,7 @@ ul.timeline li .data .text {
 
 /* home
  **************************************************/
- .home .pageheader{
+.home .pageheader{
 	padding: 40px 4%;
 	background: #222222;
 }
@@ -969,7 +971,6 @@ ul.timeline li .data .text {
 .home .fixedbg.parallax{
 	background: #ffffff url('../img/home-parallaxbg.jpg');
 }
-
 
 .home .h3 {
 	padding: 0;
@@ -981,7 +982,7 @@ ul.timeline li .data .text {
 
 /* publications
  **************************************************/
- #publications .pageheader{
+#publications .pageheader{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1057,10 +1058,11 @@ ul.timeline li .data .text {
 	padding: 25px;
 	display: none;
 }
+
 /* Gallery
  **************************************************/
 #gallery .pageheader{
-	background-image: url(../img/gallery-head.jpg);
+	background-image: url("../img/gallery-head.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1095,14 +1097,12 @@ ul.grid li {
 	ul.grid li {
 		width: 50%;
 	}
-
 }
 
 @media screen and (max-width: 400px) {
 	ul.grid li {
 		width: 100%;
 	}
-
 }
 
 ul.grid li >div {
@@ -1306,7 +1306,6 @@ ul.grid li a,ul.grid li img {
 }
 
 #main .scrollup{
-  transform: none;
   background-color: #9a9ef6;
   right: 20px !important;
   bottom: 30px !important;
@@ -1331,7 +1330,6 @@ ul.grid li a,ul.grid li img {
 #main .show-scroll{
   bottom: 3rem;
 }
-
 
 @media (max-width: 500px) {
 	ul.timeline {
@@ -1372,17 +1370,14 @@ ul.grid li a,ul.grid li img {
 		left: 0px;
 		z-index: 0;
 	}
-
 	#main {
 		left: 0;
 	}
-
 }
 
 
 /* fix for mobile view of pages */
 @media screen and (max-width: 770px) {
-	 
 	 #blog-content{
 	 	width:100% !important;
 	 }
@@ -1398,7 +1393,4 @@ ul.grid li a,ul.grid li img {
 	.nav-menu{
 	    font-size: 13px;
 	}
-
-}
-
 }
