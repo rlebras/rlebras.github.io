@@ -17,6 +17,7 @@ conf_fullname_map = {
     'CompSust': 'International Conference on Computational Sustainability',
     'CP': 'International Conference on Principles and Practice of Constraint Programming',
     'CP-AI-OR': 'International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming',
+    'CVPR': 'Conference on Computer Vision and Pattern Recognition',
     'IAAI': 'Conference on Innovative Applications of Artificial Intelligence',
     'IJCAI': 'International Joint Conference on Artificial Intelligence',
     'J Econ Behav Organ.': 'The Journal of Economic Behavior and Organization',
