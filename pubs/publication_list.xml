@@ -1,6 +1,132 @@
     <ul>
         <Result.Item border="none">
             <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/From-Dogwhistles-to-Bullhorns%3A-Unveiling-Coded-with-Mendelsohn-Bras/a5731b32060909bfc8848fa5f7e1e14ca3b53240">
+                    From Dogwhistles to Bullhorns: Unveiling Coded Rhetoric with Language Models
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Julia Mendelsohn, Ronan Le Bras, Yejin Choi, Maarten Sap
+                </strong>
+            </BodySmall>
+            <BodySmall>ACL | 2023</BodySmall>
+            <p>
+                Dogwhistles are coded expressions that simultaneously convey one meaning to a broad audience and a second one, often hateful or provocative, to a narrow in-group; they are deployed to evade both political repercussions and algorithmic content moderation. For example, in the sentence 'we need to end the cosmopolitan experiment,' the word 'cosmopolitan' likely means 'worldly' to many, but secretly means 'Jewish' to a select few. We present the first large-scale computational investigation of dogwhistles. We develop a typology of dogwhistles, curate the largest-to-date glossary of over 300 dogwhistles with rich contextual information and examples, and analyze their usage in historical U.S. politicians' speeches. We then assess whether a large language model (GPT-3) can identify dogwhistles and their meanings, and find that GPT-3's performance varies widely across types of dogwhistles and targeted groups. Finally, we show that harmful content containing dogwhistles avoids toxicity detection, highlighting online risks of such coded language. This work sheds light on the theoretical and applied importance of dogwhistles in both NLP and computational social science, and provides resources for future research in modeling dogwhistles and mitigating their online harms.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/I2D2%3A-Inductive-Knowledge-Distillation-with-and-Bhagavatula-Hwang/83562af413d730b9321efe8bea24058514ac940b">
+                    I2D2: Inductive Knowledge Distillation with NeuroLogic and Self-Imitation
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Chandra Bhagavatula, Jena D. Hwang, Doug Downey, Ronan Le Bras, Ximing Lu, Keisuke Sakaguchi, Swabha Swayamdipta, Peter West, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>ACL | 2023</BodySmall>
+            <p>
+                Commonsense capabilities of pre-trained language models dramatically improve with scale, leading many to believe that scale is the only winning recipe. But is it? Here, we investigate an alternative that a priori seems impossible: can smaller language models (e.g., GPT-2) win over models that are orders of magnitude larger and better (e.g., GPT-3), if powered with novel commonsense distillation algorithms? The key intellectual challenge is to design a learning algorithm that achieve a competitive level of commonsense acquisition, without relying on the benefits of scale. In particular, we study generative models of commonsense knowledge, focusing on the task of generating generics, statements of commonsense facts about everyday concepts, e.g., birds can fly. We introduce I2D2, a novel commonsense distillation framework that loosely follows the Symbolic Knowledge Distillation of West et al. but breaks the dependence on the extreme-scale teacher model with two innovations: (1) the novel adaptation of NeuroLogic Decoding to enhance the generation quality of the weak, off-the-shelf language models, and (2) self-imitation learning to iteratively learn from the model's own enhanced commonsense acquisition capabilities. Empirical results suggest that scale is not the only way, as novel algorithms can be a promising alternative. Moreover, our study leads to a new corpus of generics, Gen-A-tomic, that is the largest and highest quality available to date.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/NLPositionality%3A-Characterizing-Design-Biases-of-Santy-Liang/a66ff335f5934fe7503a99d3eb3abed493994df1">
+                    NLPositionality: Characterizing Design Biases of Datasets and Models
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Sebastin Santy, Jenny T. Liang, Ronan Le Bras, Katharina Reinecke, Maarten Sap
+                </strong>
+            </BodySmall>
+            <BodySmall>ACL | 2023</BodySmall>
+            <p>
+                Design biases in NLP systems, such as performance differences for different populations, often stem from their creator’s positionality, i.e.,
+views and lived experiences shaped by identity and background. Despite the prevalence and risks of design biases, they are hard to quantify because researcher, system, and dataset
+positionality is often unobserved. We introduce NLPositionality, a framework for char-
+acterizing design biases and quantifying the positionality of NLP datasets and models. Our
+framework continuously collects annotations from a diverse pool of volunteer participants
+on LabintheWild, and statistically quantifies alignment with dataset labels and model predictions. We apply NLPositionality to existing datasets and models for two tasks—social ac-
+ceptability and hate speech detection. To date,
+we have collected 16, 299 annotations in over
+a year for 600 instances from 1, 096 annotators across 87 countries. We find that datasets
+and models align predominantly with Western,
+White, college-educated, and younger populations. Additionally, certain groups, such as non-
+binary people and non-native English speakers,
+are further marginalized by datasets and models as they rank least in alignment across all
+tasks. Finally, we draw from prior literature
+to discuss how researchers can examine their
+own positionality and that of their datasets and
+models, opening the door for more inclusive
+NLP systems.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Modular-Transformers%3A-Compressing-Transformers-into-Zhou-Bras/1a7763f30c97b5b052af36bcfe478f64dcb97986">
+                    Modular Transformers: Compressing Transformers into Modularized Layers for Flexible Efficient Inference
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Wangchunshu Zhou, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>Findings of ACL | 2023</BodySmall>
+            <p>
+                Pre-trained Transformer models like T5 and BART have advanced the state of the art on a wide range of
+                text generation tasks. Compressing these models into smaller ones has become critically important for
+                practical use. Common neural network compression techniques such as knowledge distillation or quantization
+                are limited to static compression where the compression ratio is fixed. In this paper, we introduce
+                Modular Transformers, a modularized encoder-decoder framework for flexible sequence-to-sequence model
+                compression. Modular Transformers train modularized layers that have the same function of two or more
+                consecutive layers in the original model via module replacing and knowledge distillation. After training,
+                the modularized layers can be flexibly assembled into sequence-to-sequence models that meet different
+                performance-efficiency trade-offs. Experimental results show that after a single training phase,
+                by simply varying the assembling strategy, Modular Transformers can achieve flexible compression ratios
+                from 1.1x to 6x with little to moderate relative performance drop.
+            </p>
+        </Result.Item>
+
+
+        <Result.Item border="none">
+            <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/Commonsense-Knowledge-Transfer-for-Pre-trained-Zhou-Bras/1c6c6a26d23e8343c6de06187818f0402c994812">
+                    Commonsense Knowledge Transfer for Pre-trained Language Models
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Wangchunshu Zhou, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>Findings of ACL | 2023</BodySmall>
+            <p>
+                Despite serving as the foundation models for a wide range of NLP benchmarks, pre-trained language
+                models have shown limited capabilities of acquiring implicit commonsense knowledge from
+                self-supervision alone, compared to learning linguistic and factual knowledge that appear
+                more explicitly in the surface patterns in text. In this work, we introduce commonsense
+                knowledge transfer, a framework to transfer the commonsense knowledge stored in a neural
+                commonsense knowledge model to a general-purpose pre-trained language model. It first
+                exploits general texts to form queries for extracting commonsense knowledge from the neural
+                commonsense knowledge model and then refines the language model with two self-supervised
+                objectives: commonsense mask infilling and commonsense relation prediction, which align
+                human language with the underlying commonsense knowledge. Empirical results show that our
+                approach consistently improves the model's performance on downstream tasks that require
+                commonsense reasoning. Moreover, we find that the improvement is more significant in the
+                few-shot setting. This suggests that our approach helps language models better transfer
+                to downstream tasks without extensive supervision by injecting commonsense knowledge into their parameters.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
                 <a href="https://www.semanticscholar.org/paper/Neural-Theory-of-Mind-On-the-Limits-of-Social-in-Sap-Lebras/b4c16b0f26f9f5ad5e12f9bec3f1ad72eaa5491b">
                     Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs
                 </a>
