@@ -219,6 +219,7 @@ NLP systems.
             <p>
                 The dominant paradigm for neural text generation is left-to-right decoding from autoregressive language models. Constrained or controllable generation under complex lexical constraints, however, requires foresight to plan ahead feasible future paths. Drawing inspiration from the A* search algorithm, we propose NEUROLOGIC AFesque,1 a decoding algorithm that incorporates heuristic estimates of future cost. We develop efficient lookahead heuristics that are efficient for large-scale language models, making our method a drop-in replacement for common techniques such as beam search and top-k sampling. To enable constrained generation, we build on NEUROLOGIC decoding (Lu et al., 2021), combining its flexibility in incorporating logical constraints with AFesque estimates of future constraint satisfaction. Our approach outperforms competitive baselines on five generation tasks, and achieves new state-of-the-art performance on table-totext generation, constrained machine translation, and keyword-constrained generation. The improvements are particularly notable on tasks that require complex constraint satisfaction or in few-shot or zero-shot settings. NEUROLOGIC AFesque illustrates the power of decoding for improving and enabling new capabilities of large-scale language models.
             </p>
+            <award>Best Paper Award</award>
         </Result.Item>
 
 
@@ -701,6 +702,7 @@ with the importance of conspicuous monitoring when managers and workers are not 
                 discuss how biases lead to overestimating the true capabilities of machine
                 commonsense.
             </p>
+            <award>Outstanding Paper Award</award>
         </Result.Item>
 
         <Result.Item border="none">
@@ -907,6 +909,7 @@ with the importance of conspicuous monitoring when managers and workers are not 
                 Phase-Mapper is also being deployed at the Stanford Synchrotron Radiation
                 Lightsource (SSRL) to enable phase mapping on datasets in real time.
             </p>
+            <award>Innovative Application Paper Award</award>
         </Result.Item>
 
         <Result.Item border="none">
@@ -1238,6 +1241,7 @@ with the importance of conspicuous monitoring when managers and workers are not 
                 15–55 % reduction in time-to-solution or service response time, without any need for
                 modifying application code.
             </p>
+            <award>Best Paper Award</award>
         </Result.Item>
 
         <Result.Item border="none">

@@ -44,7 +44,7 @@ def getConfName(conf, year):
     return ret
 
 
-def writeHTML(paper, link, authors, year, conf, abstract):
+def writeHTML(paper, link, authors, year, conf, abstract, award):
     type='cpaper ' + conf
     s='''<div class="item mix TYPEPH" data-year="YEARPH">
                                                     <div class="pubmain">
@@ -64,7 +64,7 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                         <div class="pubauthor">
                                                         </div>
                                                         <div class="pubcite"><span class="label label-success">CONFPH</span> CONFFULLPH </div>
-
+                                                        AWARDPH
                                                     </div>
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
@@ -72,7 +72,9 @@ def writeHTML(paper, link, authors, year, conf, abstract):
                                                     </div>
         </div>'''
     if conf in journals:
-        type="jpaper " + conf
+        type = "jpaper " + conf
+    if award != '':
+        type = type + ' award'
     s = s.replace('TYPEPH', type)
     s = s.replace('PAPERPH', paper)
     s = s.replace('LINKPH', link)
@@ -81,6 +83,12 @@ def writeHTML(paper, link, authors, year, conf, abstract):
     s = s.replace('CONFPH', conf)
     s = s.replace('CONFFULLPH', getConfName(conf, year))
     s = s.replace('ABSTRACTPH', abstract)
+    award_html = '''
+    <div class="pubcite"><span class="label"><img src = "./img/trophy-solid.svg" alt="trophy" width="20px" height="20px"/></span> ''' + award + ' </div>'
+    if award == '':
+        award_html = ''
+    s = s.replace('AWARDPH', award_html)
+
     return s
 
 def clean(s):
@@ -102,8 +110,10 @@ def parse():
         abstract=getNodeText(s.getElementsByTagName('p')[0])
         link=title.getAttribute("href").strip()
         paper=clean(getNodeText(title))
-
-        s = writeHTML(paper, link, authors, year, conf, abstract)
+        award= ''
+        if len(s.getElementsByTagName('award')) > 0:
+            award = clean(getNodeText(s.getElementsByTagName('award')[0]))
+        s = writeHTML(paper, link, authors, year, conf, abstract, award)
         print(s)
         f.write(s)
 
