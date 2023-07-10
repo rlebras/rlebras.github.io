@@ -45,6 +45,7 @@
                 </strong>
             </BodySmall>
             <BodySmall>ACL | 2023</BodySmall>
+            <award>Outstanding Paper Award</award>
             <p>
                 Design biases in NLP systems, such as performance differences for different populations, often stem from their creator’s positionality, i.e.,
 views and lived experiences shaped by identity and background. Despite the prevalence and risks of design biases, they are hard to quantify because researcher, system, and dataset
