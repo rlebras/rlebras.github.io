@@ -184,9 +184,9 @@ $(document).ready(function(){
 	/*++++++++++++++++++++++++++++++++++++
 		click event on ul.timeline titles
 	++++++++++++++++++++++++++++++++++++++*/
-	$("ul.timeline").children().eq(0)
-		.find(".text").slideDown()
-		.addClass("open");
+	//$("ul.timeline").children().eq(0)
+	//	.find(".text").slideDown()
+	//	.addClass("open");
 
 	$("ul.timeline").on("click","li", function(){
 		$this = $(this);
