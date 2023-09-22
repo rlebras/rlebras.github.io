@@ -35,7 +35,15 @@ conf_fullname_map = {
     'VLDB': 'International Conference on Very Large Data Bases',
 }
 
+conf_shortname_map = {
+    'NeurIPS Datasets and Benchmarks Track': 'NeurIPS',
+    'SemEval-NAACL': 'NAACL',
+    'Findings of EMNLP': 'EMNLP',
+    'Findings of ACL': 'ACL'
+}
+
 journals=['The VLDB Journal', 'J Econ Behav Organ.']
+
 
 def getConfName(conf, year):
     ret = conf + " " + year
@@ -44,8 +52,14 @@ def getConfName(conf, year):
     return ret
 
 
+def getConfShortName(conf):
+    ret = conf
+    if conf in conf_shortname_map:
+        ret = conf_shortname_map[conf]
+    return ret
+
+
 def writeHTML(paper, link, authors, year, conf, abstract, award):
-    type='cpaper ' + conf
     s='''<div class="item mix TYPEPH" data-year="YEARPH">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
@@ -71,8 +85,10 @@ def writeHTML(paper, link, authors, year, conf, abstract, award):
                                                         <p>ABSTRACTPH</p>
                                                     </div>
         </div>'''
+    short_conf = getConfShortName(conf)
+    type = 'cpaper ' + short_conf
     if conf in journals:
-        type = "jpaper " + conf
+        type = "jpaper " + short_conf
     if award != '':
         type = type + ' award'
     s = s.replace('TYPEPH', type)
@@ -80,7 +96,7 @@ def writeHTML(paper, link, authors, year, conf, abstract, award):
     s = s.replace('LINKPH', link)
     s = s.replace('AUTHORSPH', authors)
     s = s.replace('YEARPH', year)
-    s = s.replace('CONFPH', conf)
+    s = s.replace('CONFPH', short_conf)
     s = s.replace('CONFFULLPH', getConfName(conf, year))
     s = s.replace('ABSTRACTPH', abstract)
     award_html = '''
