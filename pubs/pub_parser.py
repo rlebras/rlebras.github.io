@@ -91,9 +91,11 @@ def writeHTML(paper, link, authors, year, conf, abstract, award):
 
     return s
 
+
 def clean(s):
     ret = s.strip().replace('\n', ' ').replace('\r', '').replace('\t', ' ')
     return ' '.join(ret.split())
+
 
 def parse():
     file = "./publication_list.xml"
