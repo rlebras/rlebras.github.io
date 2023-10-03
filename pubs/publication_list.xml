@@ -79,7 +79,7 @@
                 </strong>
             </BodySmall>
             <BodySmall>ACL | 2023</BodySmall>
-            <award>Outstanding Paper Award</award>
+            <award>Outstanding Paper Award (39 out of 1,074 accepted papers)</award>
             <p>
                 Design biases in NLP systems, such as performance differences for different populations, often stem from their creator’s positionality, i.e.,
 views and lived experiences shaped by identity and background. Despite the prevalence and risks of design biases, they are hard to quantify because researcher, system, and dataset
@@ -254,7 +254,7 @@ NLP systems.
             <p>
                 The dominant paradigm for neural text generation is left-to-right decoding from autoregressive language models. Constrained or controllable generation under complex lexical constraints, however, requires foresight to plan ahead feasible future paths. Drawing inspiration from the A* search algorithm, we propose NEUROLOGIC AFesque,1 a decoding algorithm that incorporates heuristic estimates of future cost. We develop efficient lookahead heuristics that are efficient for large-scale language models, making our method a drop-in replacement for common techniques such as beam search and top-k sampling. To enable constrained generation, we build on NEUROLOGIC decoding (Lu et al., 2021), combining its flexibility in incorporating logical constraints with AFesque estimates of future constraint satisfaction. Our approach outperforms competitive baselines on five generation tasks, and achieves new state-of-the-art performance on table-totext generation, constrained machine translation, and keyword-constrained generation. The improvements are particularly notable on tasks that require complex constraint satisfaction or in few-shot or zero-shot settings. NEUROLOGIC AFesque illustrates the power of decoding for improving and enabling new capabilities of large-scale language models.
             </p>
-            <award>Best Paper Award</award>
+            <award>Best Paper Award (1 out of 442 accepted papers)</award>
         </Result.Item>
 
 
