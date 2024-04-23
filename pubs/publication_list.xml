@@ -1,6 +1,36 @@
     <ul>
         <Result.Item border="none">
             <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/MacGyver%3A-Are-Large-Language-Models-Creative-Tian-Ravichander/437cbaee4eaee0bf84abbe11750b86b091b9b756">
+                    MacGyver: Are Large Language Models Creative Problem Solvers?
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Yufei Tian, Abhilasha Ravichander, Lianhui Qin, Ronan Le Bras, Raja Marjieh, Nanyun Peng, Yejin Choi, Thomas L. Griffiths, Faeze Brahman
+                </strong>
+            </BodySmall>
+            <BodySmall>NAACL | 2024</BodySmall>
+            <p>
+                We explore the creative problem-solving capabilities of modern large language models (LLMs) in a constrained setting.
+                The setting requires circumventing a cognitive bias known in psychology as ”functional fixedness” to use familiar objects
+                in innovative or unconventional ways. To this end, we create MacGyver, an automatically generated dataset
+                consisting of 1,600 real-world problems that deliberately trigger functional fixedness and
+                require thinking ’out-of-the-box’. We then present our collection of problems to both LLMs and
+                humans to compare and contrast their problem-solving abilities. We show that MacGyver is challenging
+                for both groups, but in unique and complementary ways. For example, humans typically excel in solving
+                problems that they are familiar with but may struggle with tasks requiring domain-specific knowledge,
+                leading to a higher variance. On the other hand, LLMs, being exposed to a variety of highly specialized knowledge,
+                attempt broader problems but are prone to overconfidence and propose actions that are physically infeasible or inefficient.
+                We also provide a detailed error analysis of LLMs, and demonstrate the potential of enhancing their problem-solving ability
+                with novel prompting techniques such as iterative step-wise reflection and divergent-convergent thinking.
+                This work provides insight into the creative problem-solving capabilities of humans and AI and illustrates
+                how psychological paradigms can be extended into large-scale tasks for comparing humans and machines.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
                 <a href="https://www.semanticscholar.org/paper/Improving-Language-Models-with-Advantage-based-Baheti-Lu/9d2dc57903e99f33b9cf727c3903718751d82663">
                     Improving Language Models with Advantage-based Offline Policy Gradients
                 </a>
