@@ -42,7 +42,7 @@ conf_shortname_map = {
     'Findings of ACL': 'ACL'
 }
 
-journals=['The VLDB Journal', 'J Econ Behav Organ.']
+journals = ['The VLDB Journal', 'J Econ Behav Organ.', 'Nature Machine Intelligence', 'Transactions on Machine Learning Research']
 
 
 def getConfName(conf, year):
