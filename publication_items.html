@@ -24,6 +24,32 @@
                 Obeying precise constraints on top of multiple external attributes is a common computational problem underlying seemingly different domains, from controlled text generation to protein engineering. Existing language model (LM) controllability methods for multi-attribute constraint satisfaction often rely on specialized architectures or gradient-based classifiers, limiting their flexibility to work with arbitrary black-box evaluators and pretrained models. Current general-purpose large language models, while capable, cannot achieve fine-grained multi-attribute control over external attributes. Thus, we create Multi-Attribute Constraint Satisfaction (MACS), a generalized method capable of finetuning language models on any sequential domain to satisfy user-specified constraints on multiple external real-value attributes. Our method trains LMs as editors by sampling diverse multi-attribute edit pairs from an initial set of paraphrased outputs. During inference, LM iteratively improves upon its previous solution to satisfy constraints for all attributes by leveraging our designed constraint satisfaction reward. We additionally experiment with reward-weighted behavior cloning to further improve the constraint satisfaction rate of LMs. To evaluate our approach, we present a new Fine-grained Constraint Satisfaction (FineCS) benchmark, featuring two challenging tasks: (1) Text Style Transfer, where the goal is to simultaneously modify the sentiment and complexity of reviews, and (2) Protein Design, focusing on modulating fluorescence and stability of Green Fluorescent Proteins (GFP). Our empirical results show that MACS achieves the highest threshold satisfaction in both FineCS tasks, outperforming strong domain-specific baselines. Our work opens new avenues for generalized and real-value multi-attribute control, with implications for diverse applications spanning NLP and bioinformatics.
             </p>
                                                     </div>
+        </div><div class="item mix cpaper ICLR" data-year="2025">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.semanticscholar.org/paper/WildBench%3A-Benchmarking-LLMs-with-Challenging-Tasks-Lin-Deng/5d12dfd7278cb8da26f9fd1956cad3c15cea9863" title="Download" target="_blank">
+
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild</h4>
+                                                        <div class="pubauthor">Bill Yuchen Lin, Yuntian Deng, K. Chandu, Faeze Brahman, Abhilasha Ravichander, Valentina Pyatkin, Nouha Dziri, Ronan Le Bras, Yejin Choi</div>
+                                                        <div class="pubauthor">
+                                                        </div>
+                                                        <div class="pubcite"><span class="label label-success">ICLR</span> International Conference on Learning Representations, ICLR 2025 </div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                We introduce WildBench, an automated evaluation framework designed to benchmark large language models (LLMs) using challenging, real-world user queries. WildBench consists of 1,024 tasks carefully selected from over one million human-chatbot conversation logs. For automated evaluation with WildBench, we have developed two metrics, WB-Reward and WB-Score, which are computable using advanced LLMs such as GPT-4-turbo. WildBench evaluation uses task-specific checklists to evaluate model outputs systematically and provides structured explanations that justify the scores and comparisons, resulting in more reliable and interpretable automatic judgments. WB-Reward employs fine-grained pairwise comparisons between model responses, generating five potential outcomes: much better, slightly better, slightly worse, much worse, or a tie. Unlike previous evaluations that employed a single baseline model, we selected three baseline models at varying performance levels to ensure a comprehensive pairwise evaluation. Additionally, we propose a simple method to mitigate length bias, by converting outcomes of ``slightly better/worse'' to ``tie'' if the winner response exceeds the loser one by more than $K$ characters. WB-Score evaluates the quality of model outputs individually, making it a fast and cost-efficient evaluation metric. WildBench results demonstrate a strong correlation with the human-voted Elo ratings from Chatbot Arena on hard tasks. Specifically, WB-Reward achieves a Pearson correlation of 0.98 with top-ranking models. Additionally, WB-Score reaches 0.95, surpassing both ArenaHard's 0.91 and AlpacaEval2.0's 0.89 for length-controlled win rates, as well as the 0.87 for regular win rates.
+            </p>
+                                                    </div>
         </div><div class="item mix jpaper Nature Machine Intelligence" data-year="2024">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
@@ -126,32 +152,6 @@
                                                         <h4>Abstract</h4>
                                                         <p>
                 While hallucinations of large language models (LLMs) prevail as a major challenge, existing evaluation benchmarks on factuality do not cover the diverse domains of knowledge that the real-world users of LLMs seek information about. To bridge this gap, we introduce WildHallucinations, a benchmark that evaluates factuality. It does so by prompting LLMs to generate information about entities mined from user-chatbot conversations in the wild. These generations are then automatically fact-checked against a systematically curated knowledge source collected from web search. Notably, half of these real-world entities do not have associated Wikipedia pages. We evaluate 118,785 generations from 15 LLMs on 7,919 entities. We find that LLMs consistently hallucinate more on entities without Wikipedia pages and exhibit varying hallucination rates across different domains. Finally, given the same base models, adding a retrieval component only slightly reduces hallucinations but does not eliminate hallucinations.
-            </p>
-                                                    </div>
-        </div><div class="item mix cpaper ICLR" data-year="2025">
-                                                    <div class="pubmain">
-                                                        <div class="pubassets">
-
-                                                            <a href="#" class="pubcollapse">
-                                                                <i class="fa fa-expand"></i>
-                                                            </a>
-                                                            <a href="https://www.semanticscholar.org/paper/WildBench%3A-Benchmarking-LLMs-with-Challenging-Tasks-Lin-Deng/5d12dfd7278cb8da26f9fd1956cad3c15cea9863" title="Download" target="_blank">
-
-                                                                <i class="fa fa-external-link"></i>
-                                                            </a>
-                                                        </div>
-
-                                                        <h4 class="pubtitle">WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild</h4>
-                                                        <div class="pubauthor">Bill Yuchen Lin, Yuntian Deng, K. Chandu, Faeze Brahman, Abhilasha Ravichander, Valentina Pyatkin, Nouha Dziri, Ronan Le Bras, Yejin Choi</div>
-                                                        <div class="pubauthor">
-                                                        </div>
-                                                        <div class="pubcite"><span class="label label-success">ICLR</span> International Conference on Learning Representations, ICLR 2025 </div>
-                                                        
-                                                    </div>
-                                                    <div class="pubdetails">
-                                                        <h4>Abstract</h4>
-                                                        <p>
-                We introduce WildBench, an automated evaluation framework designed to benchmark large language models (LLMs) using challenging, real-world user queries. WildBench consists of 1,024 tasks carefully selected from over one million human-chatbot conversation logs. For automated evaluation with WildBench, we have developed two metrics, WB-Reward and WB-Score, which are computable using advanced LLMs such as GPT-4-turbo. WildBench evaluation uses task-specific checklists to evaluate model outputs systematically and provides structured explanations that justify the scores and comparisons, resulting in more reliable and interpretable automatic judgments. WB-Reward employs fine-grained pairwise comparisons between model responses, generating five potential outcomes: much better, slightly better, slightly worse, much worse, or a tie. Unlike previous evaluations that employed a single baseline model, we selected three baseline models at varying performance levels to ensure a comprehensive pairwise evaluation. Additionally, we propose a simple method to mitigate length bias, by converting outcomes of ``slightly better/worse'' to ``tie'' if the winner response exceeds the loser one by more than $K$ characters. WB-Score evaluates the quality of model outputs individually, making it a fast and cost-efficient evaluation metric. WildBench results demonstrate a strong correlation with the human-voted Elo ratings from Chatbot Arena on hard tasks. Specifically, WB-Reward achieves a Pearson correlation of 0.98 with top-ranking models. Additionally, WB-Score reaches 0.95, surpassing both ArenaHard's 0.91 and AlpacaEval2.0's 0.89 for length-controlled win rates, as well as the 0.87 for regular win rates.
             </p>
                                                     </div>
         </div><div class="item mix cpaper NAACL" data-year="2024">

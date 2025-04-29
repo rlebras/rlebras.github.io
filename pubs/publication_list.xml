@@ -18,6 +18,23 @@
 
         <Result.Item border="none">
             <Result.Title>
+                <a href="https://www.semanticscholar.org/paper/WildBench%3A-Benchmarking-LLMs-with-Challenging-Tasks-Lin-Deng/5d12dfd7278cb8da26f9fd1956cad3c15cea9863">
+                    WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild
+                </a>
+            </Result.Title>
+            <BodySmall>
+                <strong>
+                    Bill Yuchen Lin, Yuntian Deng, K. Chandu, Faeze Brahman, Abhilasha Ravichander, Valentina Pyatkin, Nouha Dziri, Ronan Le Bras, Yejin Choi
+                </strong>
+            </BodySmall>
+            <BodySmall>ICLR | 2025</BodySmall>
+            <p>
+                We introduce WildBench, an automated evaluation framework designed to benchmark large language models (LLMs) using challenging, real-world user queries. WildBench consists of 1,024 tasks carefully selected from over one million human-chatbot conversation logs. For automated evaluation with WildBench, we have developed two metrics, WB-Reward and WB-Score, which are computable using advanced LLMs such as GPT-4-turbo. WildBench evaluation uses task-specific checklists to evaluate model outputs systematically and provides structured explanations that justify the scores and comparisons, resulting in more reliable and interpretable automatic judgments. WB-Reward employs fine-grained pairwise comparisons between model responses, generating five potential outcomes: much better, slightly better, slightly worse, much worse, or a tie. Unlike previous evaluations that employed a single baseline model, we selected three baseline models at varying performance levels to ensure a comprehensive pairwise evaluation. Additionally, we propose a simple method to mitigate length bias, by converting outcomes of ``slightly better/worse'' to ``tie'' if the winner response exceeds the loser one by more than $K$ characters. WB-Score evaluates the quality of model outputs individually, making it a fast and cost-efficient evaluation metric. WildBench results demonstrate a strong correlation with the human-voted Elo ratings from Chatbot Arena on hard tasks. Specifically, WB-Reward achieves a Pearson correlation of 0.98 with top-ranking models. Additionally, WB-Score reaches 0.95, surpassing both ArenaHard's 0.91 and AlpacaEval2.0's 0.89 for length-controlled win rates, as well as the 0.87 for regular win rates.
+            </p>
+        </Result.Item>
+
+        <Result.Item border="none">
+            <Result.Title>
                 <a href="https://arxiv.org/abs/2110.07574">
                     An Empirical Investigation of Machines' Capabilities for Moral Judgment with the Delphi Experiment
                 </a>
@@ -81,23 +98,6 @@
             <BodySmall>arXiv | 2024</BodySmall>
             <p>
                 While hallucinations of large language models (LLMs) prevail as a major challenge, existing evaluation benchmarks on factuality do not cover the diverse domains of knowledge that the real-world users of LLMs seek information about. To bridge this gap, we introduce WildHallucinations, a benchmark that evaluates factuality. It does so by prompting LLMs to generate information about entities mined from user-chatbot conversations in the wild. These generations are then automatically fact-checked against a systematically curated knowledge source collected from web search. Notably, half of these real-world entities do not have associated Wikipedia pages. We evaluate 118,785 generations from 15 LLMs on 7,919 entities. We find that LLMs consistently hallucinate more on entities without Wikipedia pages and exhibit varying hallucination rates across different domains. Finally, given the same base models, adding a retrieval component only slightly reduces hallucinations but does not eliminate hallucinations.
-            </p>
-        </Result.Item>
-
-        <Result.Item border="none">
-            <Result.Title>
-                <a href="https://www.semanticscholar.org/paper/WildBench%3A-Benchmarking-LLMs-with-Challenging-Tasks-Lin-Deng/5d12dfd7278cb8da26f9fd1956cad3c15cea9863">
-                    WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild
-                </a>
-            </Result.Title>
-            <BodySmall>
-                <strong>
-                    Bill Yuchen Lin, Yuntian Deng, K. Chandu, Faeze Brahman, Abhilasha Ravichander, Valentina Pyatkin, Nouha Dziri, Ronan Le Bras, Yejin Choi
-                </strong>
-            </BodySmall>
-            <BodySmall>ICLR | 2025</BodySmall>
-            <p>
-                We introduce WildBench, an automated evaluation framework designed to benchmark large language models (LLMs) using challenging, real-world user queries. WildBench consists of 1,024 tasks carefully selected from over one million human-chatbot conversation logs. For automated evaluation with WildBench, we have developed two metrics, WB-Reward and WB-Score, which are computable using advanced LLMs such as GPT-4-turbo. WildBench evaluation uses task-specific checklists to evaluate model outputs systematically and provides structured explanations that justify the scores and comparisons, resulting in more reliable and interpretable automatic judgments. WB-Reward employs fine-grained pairwise comparisons between model responses, generating five potential outcomes: much better, slightly better, slightly worse, much worse, or a tie. Unlike previous evaluations that employed a single baseline model, we selected three baseline models at varying performance levels to ensure a comprehensive pairwise evaluation. Additionally, we propose a simple method to mitigate length bias, by converting outcomes of ``slightly better/worse'' to ``tie'' if the winner response exceeds the loser one by more than $K$ characters. WB-Score evaluates the quality of model outputs individually, making it a fast and cost-efficient evaluation metric. WildBench results demonstrate a strong correlation with the human-voted Elo ratings from Chatbot Arena on hard tasks. Specifically, WB-Reward achieves a Pearson correlation of 0.98 with top-ranking models. Additionally, WB-Score reaches 0.95, surpassing both ArenaHard's 0.91 and AlpacaEval2.0's 0.89 for length-controlled win rates, as well as the 0.87 for regular win rates.
             </p>
         </Result.Item>
 
