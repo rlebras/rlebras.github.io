@@ -1,4 +1,13 @@
+from pathlib import Path
 from xml.dom import minidom
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+PUBLICATION_ITEMS_PATH = ROOT_DIR / "publication_items.html"
+PUBLICATION_PAGE_PATH = ROOT_DIR / "publication.html"
+XML_PATH = Path(__file__).resolve().parent / "publication_list.xml"
+START_MARKER = "<!-- PUBLICATION_ITEMS:START -->"
+END_MARKER = "<!-- PUBLICATION_ITEMS:END -->"
+
 
 def getNodeText(node):
 
@@ -113,12 +122,42 @@ def clean(s):
     return ' '.join(ret.split())
 
 
+def indent_lines(block, indent):
+    if not block:
+        return ""
+    return "\n".join(f"{indent}{line}" if line else indent for line in block.splitlines())
+
+
+def update_publication_page(items_html):
+    content = PUBLICATION_PAGE_PATH.read_text(encoding="utf-8")
+    try:
+        start = content.index(START_MARKER)
+        end = content.index(END_MARKER, start)
+    except ValueError as exc:
+        raise RuntimeError(
+            "Markers for publication items not found in publication.html"
+        ) from exc
+
+    line_start = content.rfind("\n", 0, start) + 1
+    indent = content[line_start:start]
+    before = content[:line_start]
+    after = content[end + len(END_MARKER):]
+
+    indented_html = indent_lines(items_html, indent) if items_html.strip() else ""
+    block_lines = [f"{indent}{START_MARKER}"]
+    if indented_html:
+        block_lines.append(indented_html)
+    block_lines.append(f"{indent}{END_MARKER}")
+    replacement = "\n".join(block_lines)
+
+    PUBLICATION_PAGE_PATH.write_text(before + replacement + after, encoding="utf-8")
+
+
 def parse():
-    file = "./publication_list.xml"
-    xmldoc = minidom.parse(file)
+    xmldoc = minidom.parse(str(XML_PATH))
     itemlist = xmldoc.getElementsByTagName('Result.Item')
 
-    f = open("../publication_items.html", "w")
+    generated_blocks = []
     for s in itemlist:
         title=s.getElementsByTagName('Result.Title')[0].getElementsByTagName('a')[0]
         authors=clean(getNodeText(s.getElementsByTagName('BodySmall')[0].getElementsByTagName('strong')[0]))
@@ -131,11 +170,16 @@ def parse():
         award= ''
         if len(s.getElementsByTagName('award')) > 0:
             award = clean(getNodeText(s.getElementsByTagName('award')[0]))
-        s = writeHTML(paper, link, authors, year, conf, abstract, award)
-        print(s)
-        f.write(s)
+        html_block = writeHTML(paper, link, authors, year, conf, abstract, award)
+        print(html_block)
+        generated_blocks.append(html_block)
 
-    f.close()
+    items_html = "\n".join(generated_blocks)
+    PUBLICATION_ITEMS_PATH.write_text(
+        (items_html + "\n") if items_html else "",
+        encoding="utf-8",
+    )
+    update_publication_page(items_html)
 
 def main():
     parse()
