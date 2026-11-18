@@ -173,8 +173,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, em {
 	opacity: 0.25;
 	display: none;
 	z-index: 300;
-	cursor: crosshair;
-	cursor: url("../img/pointer.png"), auto;
+	cursor: auto;
 }
 
 #runner {
@@ -969,7 +968,7 @@ ul.timeline li .data .text {
 	border: none;
 }
 .home .fixedbg.parallax{
-	background: #ffffff url('../img/home-parallaxbg.jpg');
+	background: #ffffff;
 }
 
 .home .h3 {
@@ -1062,7 +1061,6 @@ ul.timeline li .data .text {
 /* Gallery
  **************************************************/
 #gallery .pageheader{
-	background-image: url("../img/gallery-head.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1276,7 +1274,6 @@ ul.grid li a,ul.grid li img {
 /* contact
  **************************************************/
 #contact .pageheader{
-	background-image: url(../img/contact.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
